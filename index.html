@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__link">الرئيسية</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">حول</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">اتصل بنا</a></li>
+        </ul>
+    </header>
+
+    <section class="profile">
+        <div class="profile-container">
+            <div class="profile-image">
+                <a href="https://ibb.co/4Sg3RwY"><img src="https://i.ibb.co/4Sg3RwY/python-logo-icon-vector-logos-logo-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-jpeg-emble.webp" alt="python-logo-icon-vector-logos-logo-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-jpeg-emble" border="0"></a>
+
+            </div>
+            <div class="profile-info">
+                <h1 id="userName">اسم المستخدم</h1>
+                <p id="userDescription">مطور برامج، خبير في تطوير الويب وتطبيقات الهواتف الذكية.</p>
+                <ul>
+                    <li id="userEmail">البريد الإلكتروني: user@example.com</li>
+                    <li id="userPhone">رقم الهاتف: +123456789</li>
+                    <li id="userAddress">العنوان: الرياض، المملكة العربية السعودية</li>
+                </ul>
+                <a href="#" class="btn">تعديل الملف الشخصي</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icon">
+            <a href="#" class="social-icon__link">📘</a> <!-- فيسبوك -->
+            <a href="#" class="social-icon__link">📷</a> <!-- إنستغرام -->
+            <a href="#" class="social-icon__link">🐦</a> <!-- تويتر -->
+            <a href="#" class="social-icon__link">📱</a> <!-- واتساب -->
+        </div>
+        
+        <p>© 2024 حقوق الطبع محفوظة</p>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+        </div>
+    </footer>
+
+    <script>
+        // Example JavaScript to update profile content dynamically
+        document.addEventListener("DOMContentLoaded", function() {
+            // Profile data (this could come from a server or user input)
+            const profileData = {
+                name: "عبدالله أحمد",
+                description: "مطور واجهات المستخدم ومتخصص في التطبيقات المخصصة.",
+                email: "abdullah@example.com",
+                phone: "+966 1234 5678",
+                address: "جدة، المملكة العربية السعودية"
+            };
+
+            // Update HTML with profile data
+            document.getElementById("userName").textContent = profileData.name;
+            document.getElementById("userDescription").textContent = profileData.description;
+            document.getElementById("userEmail").textContent = "البريد الإلكتروني: " + profileData.email;
+            document.getElementById("userPhone").textContent = "رقم الهاتف: " + profileData.phone;
+            document.getElementById("userAddress").textContent = "العنوان: " + profileData.address;
+        });
+    </script>
+</body>
+</html>
